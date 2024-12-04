@@ -1,37 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumee</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <div class="page">
+    <header class="header">
+      <div class=header__menu>
+        <button class="menu__toggle" aria-label="Abrir menu">☰</button>
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#section1">Sobre mim</a></li>          
+          <li class="menu__item"><a class="menu__link" href="#estudos">Estudos</a></li>
+          <li class="menu__item"><a class="menu__link" href="#carreira">Carreira</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    <div class="container">
+      <div class="container-left">
+      <div class="header__text">
+        <p class="text-intro">Bem Vindo ao mundo de:</p>
+        <h1 class="text-main">Julio Cesar Heredia</h1>
+        <p class="text-sub">Aspirante a desenvolvedor e especialista em Finanças</p>
+      </div>
+      <div class="header__hab">
+        <h2 class="text-hab">Habilidades:</h2>
+        <ul class="list-hab">
+          <li class="item-hab"><img class="img-hab" src="./images/financa.png" class="img-hab"><br>Finanças</li>
+          <li class="item-hab"><img class="img-hab" src="./images/development.png" class="img-hab"><br>Development</li>
+          <li class="item-hab"><img class="img-hab" src="./images/painel-de-controle.png" class="img-hab"><br>Dados</li>
+          <li class="item-hab"><img class="img-hab" src="./images/desenvolvimento-de-estrategia.png" class="img-hab"><br>Estratégia</li>
+      </div>
+      <div class="header__hab">
+        <h2 class="text-hab">Dominios:</h2>
+        <ul class="list-hab">
+          <li class="item-hab"><img class="img-hab" src="./images/excel.png" class="img-hab"><br>Excel</li>
+          <li class="item-hab"><img class="img-hab" src="./images/html-5.png" class="img-hab"><br>HTMl / CSS</li>
+          <li class="item-hab"><img class="img-hab" src="./images/js.png" class="img-hab"><br>JavaScript</li>
+          <li class="item-hab"><img class="img-hab" src="./images/PBI.png" class="img-hab"><br>Power BI</li>
+      </div>
+    </div>
+    <div class="container-right">
+      <img class="img-profile" src="./images/perfil.png">
+    </div>
+  </div>      
     </header>
-
-    <section class="hero">
-        <div class="Hero__Container">
-            <h1>Hey there! <br> I'm Julio Heredia </h1>
-            <h2> Finance specialist and apprentice development</h2> 
-            <p>I love technology and mathematics</p>
-            <button class="btn">Linkedin</button>
+    <main class="main">
+      <section class="sobre-mim" id="sobre-mim">
+        <div class="container sobre-section">
+          <div class="section__text">
+            <h2 class="section__title">Sobre mim</h2>
+            <p class="section__intro">Olá! Sou o Julio, atualmente em transição para a área de 
+              desenvolvimento web, apaixonado por tecnologia e design digital. Com muitos anos de experiência no setor financeiro, 
+              desenvolvi habilidades analíticas, atenção aos detalhes qualidades que agora aplico no aprendizado 
+              de programação e no desenvolvimento de soluções criativas para a web.
+              <br>
+              Sou movido por desafios, adoro resolver problemas e estou sempre em busca de novas formas de unir funcionalidade e estética
+               no universo digital.
+              <br>
+              Nas horas vagas, sou um entusiasta de rock, videogames, RPGs e fã incondicional da CCXP. Meu objetivo é construir uma carreira 
+              sólida como desenvolvedor, criando projetos que façam a diferença e que também reflitam minha paixão por inovação e criatividade.</p>
+          </div>
+          <div class="section__img">
+            <img class="img-sobre-mim" src="./images//habilidades.png">
+          </div>
         </div>
-        <img src="./images/Perfil.png" alt="perfil" class="perfil">
+      </section>
+      <section class="estudos" id="estudos">
+      <h3 class="section__title">> Estudos</h3>
+      <div class="estudos_container-main">
+        <div class="estudos__ct">
+          <img class="estudos__img" src="./images/sumaré.png">
+          <h4 class="estudos__title">Bacharel em Administração de Empresas</h4>
+          <p class="estudos__text">Faculdade Sumaré</p>
+      </div>
+      <div class="estudos__ct">
+        <img class="estudos__img usjt" src="./images/Logo-SaoJudas.png">
+        <h4 class="estudos__title">MBA em Finanças e Controladoria</h4>
+        <p class="estudos__text">Universiade São judas Tadeu</p>
+    </div>
+    <div class="estudos__ct">
+      <img class="estudos__img tripleten" src="./images/Tripleten-removebg-preview.png">
+      <h4 class="estudos__title">Bootcamp Desenvolvedor Web</h4>
+      <p class="estudos__text">Tripleten</p>
+  </div>
+      </div>
+      <h3 class="section__title2">Certificações</h3>
+      <div class="estudos_container-main certific">
+        <div class="estudos__ct estudos__ct2">
+          <img class="estudos__img iels" src="./images/iels.png">
+          <h4 class="estudos__title">Inglês Elementar</h4>
+          <p class="estudos__text">IELS Malta</p>
+      </div>
+      <div class="estudos__ct estudos__ct2">
+        <img class="estudos__img alura" src="./images/alura.jpeg">
+        <h4 class="estudos__title">MTA: Introdução ao Python</h4>
+        <p class="estudos__text">Alura</p>
+    </div>
+    <div class="estudos__ct estudos__ct2">
+      <img class="estudos__img alura" src="./images/alura.jpeg">
+      <h4 class="estudos__title">SQLlite Online</h4>
+      <p class="estudos__text">Alura</p>
+  </div>
+      </div>
+      </section>
+
+    </section>
+    <section class="trabalhos" id="trabalhos">
+    <h3 class="section__title">> Carreira</h3>
+    <div class = "job__container vindi">
+      <img class="job__img" src="./images/Vindi.png" >
+      <h4 class="job__title job__title-vindi">Especialista Financeiro</h4>
+      <p class="job__text">Vindi Tecnologia, 10/2020 a atual</p>
+      <ul class="job__list">
+        <li class="job__item">Criação de soluções em ambiente 'no-code'. </li>
+        <li class="job__item">Criação e automação de estrutura de Banco de dados</li>
+        <li class="job__item">Criação de visões em dashboard's</li>
+        <li class="job__item">Fechamentos mensais (Contábeis e financeiros)</li>
+        <li class="job__item">Automatização de processos </li>
+        <li class="job__item">Criação e acompanhamento do processo orçamentário</li>
+        <li class="job__item">Análises e busca de soluções em questões adversas ao negocio</li>
+        <li class="job__item">Definição de Modelos para precificação.</li>
+      </ul>
+    </div>
+    <div class = "job__container">
+      <img class="job__img" src="./images/ifm.png">
+      <h4 class="job__title job__title-ifm">Analista Financeiro Junior</h4>
+      <p class="job__text">ifm, 08/2019 a 08/2020</p>
+      <ul class="job__list">
+        <li class="job__item">Inclusão de contas em sistema ERP </li>
+        <li class="job__item">Controle de saldos bancários</li>
+        <li class="job__item">Fluxo de caixa</li>
+        <li class="job__item">Fechamentos mensais (Contábeis e financeiros)</li>
+        <li class="job__item">Contato com fornecedores e transportadoras </li>
+        <li class="job__item">Auxílio nos processos de budget e forecast</li>
+        <li class="job__item">Automatizações em sistema integrado (erp)</li>
+        <li class="job__item">Controle de contas contábeis</li>
+      </ul>
+    </div>
+    <div class = "job__container">
+      <img class="job__img" src="./images/Logo_Oi.png">
+      <h4 class="job__title job__title-oi">Estagiario Tesouraria/Auditoria</h4>
+      <p class="job__text">Owens Illinois , 06/2015 a 05/2017</p>
+      <ul class="job__list">
+        <li class="job__item">Analise e investigação de Possiveis Fraudes financeiras. </li>
+        <li class="job__item">Reconciliações Bancarias</li>
+        <li class="job__item">Aplicação de recursos financeiro da cia.</li>
+        <li class="job__item">Emissão/Renovação/Cancelamento de garantias financeiras</li>
+        <li class="job__item">Contato com fornecedores e transportadoras </li>
+        <li class="job__item">Visualização e geração de relatórios em ambiente ERP (SAP).</li>
+        <li class="job__item">Auxilio nos testes substantivos</li>
+        <li class="job__item">Controle de Notas promissórias </li>
+      </ul>
+    </div>
+    </section>
+    <section class="projetos" id="projetos">
+      <h4 class="section__title">> Projetos</h4>
+      <div class="projetos__carousel">
+        <button class="carousel__button carousel__button--left" aria-label="Previous image">&lt;</button>
+        <div class="projetos__container">
+          <div class="projetos__item">
+            <img class="projetos__img" src="./images/Login _ Logout.gif" alt="Projeto 1">
+            <p class="projetos__caption">Projeto de Login e Logout - Python</p>
+          </div>
+          <div class="projetos__item">
+            <img class="projetos__img" src="./images/Arround the USA - image.gif" alt="Projeto 2">
+            <p class="projetos__caption">Simulador de rede social - Alteração de conteúdo - Javascript/HTML</p>
+          </div>
+          <div class="projetos__item">
+            <img class="projetos__img" src="./images/Gerador de Selic V1.gif" alt="Projeto 2">
+            <p class="projetos__caption">Gerador de Taxa Selic com consulta a API do BCB - Python</p>
+          </div>
+          <div class="projetos__item">
+            <img class="projetos__img" src="./images/Around the USA - Troca de nome.gif" alt="Projeto 2">
+            <p class="projetos__caption">Simulador de rede social - Alteração de Titulo e subtitulo - Javascript/HTML</p>
+          </div>
+          <div class="projetos__item">
+            <img class="projetos__img" src="./images/De pátria a Pátria.gif" alt="Projeto 2">
+            <p class="projetos__caption">Trabalhando com responsividade - HTML/CSS</p>
+          </div>
+        </div>
+        <button class="carousel__button carousel__button--right" aria-label="Next image">&gt;</button>
+      </div>
+    </section>
+    <section class="contato">
+      <div class="contato__container">
+        <form class="contato__form" action="https://formspree.io/f/mkgnynqw" method="POST">
+          <h4 class="contato__title">Entre em contato comigo</h4>
+          <input type="text" name="nome" placeholder="Nome" class="contato__input" required>
+          <input type="email" name="email" placeholder="E-mail" class="contato__input" required>
+          <input type="text" name="assunto" placeholder="Assunto" class="contato__input" required>
+          <textarea name="mensagem" placeholder="Mensagem" class="contato__input" required></textarea>
+          <button type="submit" class="contato__button">Enviar</button>
+        </form>
+      </div>
     </section>
     </main>
+    <footer>
+      <p class="footer__text">&copy; 2024 Desenvolvido por Julio Cesar Heredia. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

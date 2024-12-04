@@ -1,0 +1,148 @@
+.trabalhos {
+    margin-left: 80px;
+    margin-bottom: 100px;
+}
+
+.job__container {
+    display: grid;
+    background-color: #fff5e6; /* Tom mais moderno de antiquewhite */
+    width: 750px;
+    grid-template: 
+        "titulo imagem"
+        "texto imagem"
+        "atividades imagem";
+    color: #333; /* Texto mais escuro para melhor contraste */
+    padding: 20px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 50px auto;
+}
+
+/* Adicionando um efeito de hover */
+.job__container:hover {
+    transform: translateY(-10px); /* Eleva o container */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+.job__title {
+    grid-area: titulo;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22; /* Tom vibrante */
+    text-transform: uppercase; /* Deixa o título mais impactante */
+    animation: fadeInDown 0.6s ease; /* Animação ao carregar */
+}
+
+.job__text {
+    margin: 0;
+    grid-area: texto;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fadeInLeft 0.6s ease; /* Animação ao carregar */
+}
+
+.job__list {
+    margin-top: 20px;
+    grid-area: atividades;
+    list-style: georgian inside url('../images/seta-direita (1).png');
+    animation: fadeInUp 0.6s ease; /* Animação ao carregar */
+}
+
+.job__list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555; /* Cor secundária para itens da lista */
+}
+
+.job__img {
+    grid-area: imagem;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    animation: fadeInRight 0.6s ease; /* Animação ao carregar */
+}
+
+/* Animações ao carregar */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.job__title-vindi {
+    color: #00A3FF;
+}
+
+.job__title-oi {
+    color: black;
+}
+
+/* Estilos adaptativos para telas menores ou iguais a 1293px */
+@media screen and (max-width: 1293px) {
+    .job__container {
+        grid-template: 
+            "titulo"
+            "imagem"
+            "texto"
+            "atividades"; /* Coloca os elementos em uma única coluna */
+        width: 90%; /* Ajuste de largura para ocupar mais espaço da tela */
+        margin: 20px auto; /* Centraliza o container */
+    }
+
+    .job__img {
+        width: 100%; /* Faz a imagem ocupar o máximo de largura possível */
+    }
+
+    .job__title {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+
+    .job__text {
+        font-size: 14px; /* Ajusta o texto para melhor leitura */
+    }
+
+    .job__list li {
+        font-size: 13px; /* Reduz o tamanho dos itens da lista */
+    }
+}

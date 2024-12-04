@@ -1,0 +1,69 @@
+  
+  .contato__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .contato__form {
+    width: 100%;
+    max-width: 500px;
+    border: 4px inset #3c4bdb;
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação */
+  }
+  
+  .contato__form:hover {
+    transform: scale(1.05); /* Ampliar ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contato__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9); /* Fundo claro para contraste */
+    color: #333;
+  }
+  
+  .contato__input:focus {
+    border-color: #3c4bdb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(60, 75, 219, 0.5);
+  }
+  
+  .contato__button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #3c4bdb, #5b9cff); /* Botão com gradiente */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+  }
+  
+  .contato__button:hover {
+    background: linear-gradient(90deg, #5b9cff, #3c4bdb); /* Alterar gradiente ao hover */
+  }
+
+  .contato__title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  
+
+  

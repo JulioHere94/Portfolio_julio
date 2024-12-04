@@ -1,0 +1,113 @@
+.projetos {
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.section__title {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/* Container do carrossel */
+.projetos__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Itens do carrossel */
+.projetos__container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.projetos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Cada item ocupa toda a largura do carrossel */
+  flex-shrink: 0; /* Garante que os itens não encolham */
+  text-align: center;
+}
+
+/* Imagens */
+.projetos__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Legendas */
+.projetos__caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Botões */
+.carousel__button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.carousel__button:hover {
+  opacity: 1;
+}
+
+.carousel__button--left {
+  left: 10px;
+}
+
+.carousel__button--right {
+  right: 10px;
+}
+
+/* Estilo adaptativo para telas menores que 1293px */
+@media screen and (max-width: 1293px) {
+  .projetos {
+      margin-left: 10px; /* Ajusta a margem esquerda */
+      margin-bottom: 50px; /* Reduz a margem inferior */
+  }
+
+  .section__title {
+      font-size: 50px; /* Diminui levemente o título */
+      margin-bottom: 15px;
+  }
+
+  .projetos__carousel {
+      width: 100%; /* O carrossel ocupa toda a largura */
+  }
+
+  .projetos__item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%; /* Cada item mantém 100% da largura do carrossel */
+  }
+
+  .projetos__img {
+      max-width: 90%; /* Ajusta as imagens para não ocuparem largura excessiva */
+  }
+
+  .carousel__button {
+      padding: 8px 16px; /* Botões levemente menores */
+      font-size: 1.3rem;
+  }
+  
+}
+
